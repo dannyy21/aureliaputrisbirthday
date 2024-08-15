@@ -9,14 +9,13 @@ import cakeGif2 from '../../assets/cake2.gif';
 const PageContainer = styled.div`
   display: flex;
   min-height: 100vh;
-  padding: 0 30px; /* Padding di kiri dan kanan */
-  border-radius: 20px; /* Radius untuk seluruh container */
-  overflow: hidden; /* Pastikan konten tidak melebihi radius */
-  // box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Tambahkan shadow untuk visualisasi yang lebih baik */
+  padding: 0 30px;
+  border-radius: 20px;
+  overflow: hidden;
 
   @media (max-width: 768px) {
-    flex-direction: column; /* Ubah arah flex menjadi kolom pada perangkat seluler */
-    padding: 0 15px; /* Kurangi padding pada perangkat seluler */
+    flex-direction: column;
+    padding: 0 15px;
   }
 `;
 
@@ -28,13 +27,14 @@ const LeftSection = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #e0e0e0;
-  border-top-left-radius: 20px; /* Radius untuk sudut kiri atas */
-  border-bottom-left-radius: 20px; /* Radius untuk sudut kiri bawah */
-  box-sizing: border-box; /* Pastikan padding dihitung dalam lebar elemen */
-  overflow: hidden; /* Pastikan konten tidak melampaui radius */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
 
   @media (max-width: 768px) {
-    padding: 20px; /* Kurangi padding pada perangkat seluler */
+    padding: 20px;
+    border-radius: 20px 20px 0 0; /* Adjust radius for mobile */
   }
 `;
 
@@ -46,13 +46,14 @@ const RightSection = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0;
-  border-top-right-radius: 20px; /* Radius untuk sudut kanan atas */
-  border-bottom-right-radius: 20px; /* Radius untuk sudut kanan bawah */
-  box-sizing: border-box; /* Pastikan padding dihitung dalam lebar elemen */
-  overflow: hidden; /* Pastikan konten tidak melampaui radius */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
 
   @media (max-width: 768px) {
-    padding: 20px; /* Kurangi padding pada perangkat seluler */
+    padding: 20px;
+    border-radius: 0 0 20px 20px; /* Adjust radius for mobile */
   }
 `;
 
@@ -62,23 +63,7 @@ const FullImage = styled.img`
   object-fit: cover;
 
   @media (max-width: 768px) {
-    height: auto; /* Sesuaikan tinggi gambar pada perangkat seluler */
-  }
-`;
-
-const TextOverlay = styled(motion.div)`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  max-width: 80%;
-
-  @media (max-width: 768px) {
-    max-width: 90%; /* Sesuaikan lebar overlay pada perangkat seluler */
+    height: auto; /* Make sure the image resizes correctly on mobile */
   }
 `;
 
@@ -89,7 +74,7 @@ const Title = styled.h2`
   margin-bottom: 20px;
 
   @media (max-width: 768px) {
-    font-size: 1.5rem; /* Sesuaikan ukuran font pada perangkat seluler */
+    font-size: 1.5rem;
   }
 `;
 
@@ -99,10 +84,10 @@ const MotivationalText = styled.p`
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 20px;
-  text-align: justify; /* Justify text alignment */
+  text-align: justify;
 
   @media (max-width: 768px) {
-    font-size: 1rem; /* Sesuaikan ukuran font pada perangkat seluler */
+    font-size: 1rem;
   }
 `;
 
@@ -112,9 +97,13 @@ const Gif = styled.img`
   margin-top: 20px;
 
   @media (max-width: 768px) {
-    max-width: 150px; /* Sesuaikan ukuran gambar pada perangkat seluler */
+    max-width: 150px;
   }
 `;
+
+
+
+
 
 const Additional = () => {
   const motivationalQuote = `
@@ -139,17 +128,6 @@ const Additional = () => {
       </LeftSection>
       <RightSection>
         <FullImage src={fullPhoto} alt="Full Photo" />
-        {/* <TextOverlay
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <Title>Happy Birthday!</Title>
-          <MotivationalText>
-            Today is your special day. Embrace every moment and remember how valuable you are.
-            May this year bring you more happiness and success!
-          </MotivationalText>
-        </TextOverlay> */}
       </RightSection>
     </PageContainer>
   );
