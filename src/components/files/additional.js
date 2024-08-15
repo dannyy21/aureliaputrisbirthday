@@ -13,7 +13,7 @@ const PageContainer = styled.div`
   border-radius: 20px;
   overflow: hidden;
 
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
     flex-direction: column;
     padding: 0 15px;
   }
@@ -32,7 +32,7 @@ const LeftSection = styled.div`
   box-sizing: border-box;
   overflow: hidden;
 
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
     padding: 20px;
     border-radius: 20px 20px 0 0; /* Adjust radius for mobile */
   }
@@ -51,7 +51,7 @@ const RightSection = styled.div`
   box-sizing: border-box;
   overflow: hidden;
 
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
     padding: 20px;
     border-radius: 0 0 20px 20px; /* Adjust radius for mobile */
   }
@@ -62,7 +62,7 @@ const FullImage = styled.img`
   height: 100%;
   object-fit: cover;
 
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
     height: auto; /* Make sure the image resizes correctly on mobile */
   }
 `;
@@ -73,7 +73,7 @@ const Title = styled.h2`
   color: #333;
   margin-bottom: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
     font-size: 1.5rem;
   }
 `;
@@ -86,7 +86,7 @@ const MotivationalText = styled.p`
   margin-bottom: 20px;
   text-align: justify;
 
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
     font-size: 1rem;
   }
 `;
@@ -96,7 +96,7 @@ const Gif = styled.img`
   border-radius: 10px;
   margin-top: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
     max-width: 150px;
   }
 `;
