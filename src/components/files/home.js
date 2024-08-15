@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
     color: #333;
+    scroll-behavior: smooth;
   }
 `;
 
@@ -28,8 +29,8 @@ const PageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  overflow-x: hidden;
-  padding: 0 10px; // Adjust padding for small screens
+  // overflow-x: hidden;
+  padding: 0 10px;
 `;
 
 const Section = styled(motion.div)`
@@ -53,8 +54,8 @@ const ContentWrapper = styled(motion.div)`
   max-width: 1200px;
   width: 100%;
   background-color: white;
-  border-radius: 30px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;  // reduced border radius
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);  // lighter shadow
   overflow: hidden;
   transition: transform 0.3s ease;
 
@@ -64,7 +65,7 @@ const ContentWrapper = styled(motion.div)`
 
   @media (max-width: 768px) {
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);  // lighter shadow
   }
 `;
 
@@ -74,8 +75,8 @@ const Image = styled.div`
   background-image: url(${props => props.src});
   background-size: cover;
   background-position: center;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 
   @media (max-width: 768px) {
     height: 250px;
