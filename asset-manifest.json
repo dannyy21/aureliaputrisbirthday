@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aureliaputrisbirthday/static/css/main.a62c514b.css",
-    "main.js": "/aureliaputrisbirthday/static/js/main.af75e451.js",
+    "main.js": "/aureliaputrisbirthday/static/js/main.3fbe96a5.js",
     "static/media/favoritegirl.mp3": "/aureliaputrisbirthday/static/media/favoritegirl.004662b37e4bb516fe7f.mp3",
     "static/media/swap.mp3": "/aureliaputrisbirthday/static/media/swap.489ad1279d8d07eededd.mp3",
     "static/media/snooze.mp3": "/aureliaputrisbirthday/static/media/snooze.47517bcde7ece763f5d5.mp3",
@@ -27,10 +27,10 @@
     "static/media/cake2.gif": "/aureliaputrisbirthday/static/media/cake2.d84d568929869929f7db.gif",
     "index.html": "/aureliaputrisbirthday/index.html",
     "main.a62c514b.css.map": "/aureliaputrisbirthday/static/css/main.a62c514b.css.map",
-    "main.af75e451.js.map": "/aureliaputrisbirthday/static/js/main.af75e451.js.map"
+    "main.3fbe96a5.js.map": "/aureliaputrisbirthday/static/js/main.3fbe96a5.js.map"
   },
   "entrypoints": [
     "static/css/main.a62c514b.css",
-    "static/js/main.af75e451.js"
+    "static/js/main.3fbe96a5.js"
   ]
 }
