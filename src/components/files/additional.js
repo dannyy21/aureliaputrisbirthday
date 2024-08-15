@@ -8,6 +8,7 @@ import cakeGif2 from '../../assets/cake2.gif';
 
 const PageContainer = styled.div`
   display: flex;
+  flex-direction: row;
   min-height: 100vh;
   padding: 0 30px;
   border-radius: 20px;
@@ -27,33 +28,31 @@ const LeftSection = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #e0e0e0;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 20px 0 0 20px; 
   box-sizing: border-box;
   overflow: hidden;
 
-  @media (max-width: 968px) {
+  @media (max-width: 768px) {
     padding: 20px;
-    border-radius: 20px 20px 0 0; /* Adjust radius for mobile */
+    border-radius: 20px 20px 0 0; 
   }
 `;
 
 const RightSection = styled.div`
   flex: 1;
-  padding: 40px; 
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 0 20px 20px 0; 
   box-sizing: border-box;
   overflow: hidden;
 
-  @media (max-width: 968px) {
+  @media (max-width: 768px) {
     padding: 20px;
-    border-radius: 0 0 20px 20px; /* Adjust radius for mobile */
+    border-radius: 0 0 20px 20px; 
   }
 `;
 
@@ -62,11 +61,10 @@ const FullImage = styled.img`
   height: 100%;
   object-fit: cover;
 
-  @media (max-width: 968px) {
-    height: auto; /* Make sure the image resizes correctly on mobile */
+  @media (max-width: 768px) {
+    height: auto; 
   }
 `;
-
 const Title = styled.h2`
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
@@ -90,20 +88,15 @@ const MotivationalText = styled.p`
     font-size: 1rem;
   }
 `;
-
 const Gif = styled.img`
   max-width: 200px;
   border-radius: 10px;
   margin-top: 20px;
 
-  @media (max-width: 968px) {
+  @media (max-width: 768px) {
     max-width: 150px;
   }
 `;
-
-
-
-
 
 const Additional = () => {
   const motivationalQuote = `
@@ -118,7 +111,6 @@ const Additional = () => {
     Celebrate your achievements, no matter how small they may seem. Learn from your mistakes, but don't dwell
     on them. You're doing better than you think you are. Do your best and let Allah do the rest.
   `;
-
   return (
     <PageContainer>
       <LeftSection>
@@ -132,5 +124,4 @@ const Additional = () => {
     </PageContainer>
   );
 };
-
 export default Additional;
